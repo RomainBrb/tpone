@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void goToAccueil(View view){
+        Intent intent=new Intent(this,Accueil.class);
+        startActivity(intent);
+        Tnom=nom.getText().toString();
+        Tprenom=prenom.getText().toString();
+        Toast.makeText(getApplicationContext(), "Bienvenue " + Tnom + " " + Tprenom, Toast.LENGTH_LONG).show();
     }
 
     @Override

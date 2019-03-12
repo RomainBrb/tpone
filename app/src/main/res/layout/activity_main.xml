@@ -8,8 +8,17 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="53dp"
         android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulaire"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -20,8 +29,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -29,5 +36,61 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+    <application
+
+        android:label="Formulaire"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRt1="true"
+        android:theme="@style/Apptheme" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="373dp"
+        android:layout_height="40dp"
+        android:text="Bonjour, veuillez vous identifiez !"
+        android:textSize="25dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="150dp"
+        android:onClick="goToAccueil"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="129dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="120dp"
+        android:inputType="textPersonName"
+        android:text="Prenom"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="129dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="120dp"
+        android:text="Nom"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="389dp" />
 
 </android.support.design.widget.CoordinatorLayout>
