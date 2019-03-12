@@ -5,17 +5,18 @@
 
     <LinearLayout
 
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Affichage text"
-            android:textSize="25dp"
-            />
+            android:id="@+id/MsgAccueil"
+            android:layout_width="147dp"
+            android:layout_height="108dp"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="300dp"
+            android:text="Bonjour,"
+            android:textSize="25dp" />
 
     </LinearLayout>
 

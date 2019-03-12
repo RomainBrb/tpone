@@ -9,6 +9,18 @@ public class Accueil extends AppCompatActivity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.Accueil);
 
-    }
+        TextView nom;
+        Intent intent = getIntent();
+        Bundle b = intent.getExtras();
 
+        nom = (TextView) findViewById(R.id.MsgAccueil);
+
+        if(intent != null)
+        {
+            String j = (String) b.get("nom");
+            nom.setText("Bonjour " + j);
+        }
+    }
 }
+
+

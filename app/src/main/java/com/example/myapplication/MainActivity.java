@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        this.nom = findViewById(R.id.nom);
+        this.prenom = findViewById(R.id.prenom);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
     public void goToAccueil(View view){
         Intent intent=new Intent(this,Accueil.class);
         startActivity(intent);
+
+        intent.putExtra("nom",Tnom);
+
         Tnom=nom.getText().toString();
         Tprenom=prenom.getText().toString();
         Toast.makeText(getApplicationContext(), "Bienvenue " + Tnom + " " + Tprenom, Toast.LENGTH_LONG).show();

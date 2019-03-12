@@ -46,6 +46,13 @@
         android:supportsRt1="true"
         android:theme="@style/Apptheme" />
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/Logo_UPHF" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="373dp"
@@ -70,7 +77,7 @@
         tools:layout_editor_absoluteY="463dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/prenom"
         android:layout_width="129dp"
         android:layout_height="38dp"
         android:ems="10"
@@ -82,7 +89,7 @@
         tools:layout_editor_absoluteY="337dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/nom"
         android:layout_width="129dp"
         android:layout_height="38dp"
         android:ems="10"
